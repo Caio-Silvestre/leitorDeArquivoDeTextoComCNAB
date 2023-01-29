@@ -1,11 +1,12 @@
 from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator
-class HandleCnab(models.Model):
-    typeOperations = models.IntegerField(validators=[MinValueValidator(1),MaxValueValidator(9)])
-    data = models.DateTimeField()
-    valor = models.FloatField()
-    cpf = models.IntegerField()
-    cartao = models.IntegerField()
+
+class Handle_cnab(models.Model):
+    type_operations = models.CharField(max_length=50)
+    data = models.DateField()
+    valor = models.DecimalField(max_digits=17, decimal_places=2)
+    cpf = models.CharField(max_length=11)
+    cartao = models.TextField(max_length=12)
     hora = models.TimeField()
-    donoDaLoja = models.CharField(max_length=200)
-    nomeDaLoja = models.CharField(max_length=200)
+    dono_da_loja = models.CharField(max_length=14)
+    nome_da_loja = models.CharField(max_length=19)
