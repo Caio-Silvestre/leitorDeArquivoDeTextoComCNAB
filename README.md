@@ -1,6 +1,8 @@
 
-# BEM VINDO AO LEITO DE ARQUIVOS CNAB no fromato .txt"
+# BEM VINDO AO LEITOR DE ARQUIVOS CNAB no fromato .txt"
 
+# Explicação do projeto em "Explicacao_do_Projeto.md"
+# Para acessar o projeto pela Api hospedada no Render pular para o passo 03
   ==== Executar no terminal pass 01 ao 02 no terminal ====
 # 01 Realizar criar e ativar ambiente virtual (venve)
     
