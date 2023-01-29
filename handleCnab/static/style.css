@@ -1,12 +1,10 @@
-
-
-
-
 body {
     background-color: grey;
     display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 .row h1 {
-    color: red;
+    color: black;
 }

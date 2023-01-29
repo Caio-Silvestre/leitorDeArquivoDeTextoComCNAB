@@ -6,13 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{% block title %}{% endblock %}</title>
-    <link rel="stylesheet" href="../static/style.css">
+    <style>
+        body {
+            background-color: grey;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+        }
+        .row h1 {
+            color: black;
+        }
+    </style>
 </head>
 <body>
     <div class="row">
-        {% block content %}
+      
         <h1>Faça upload do seu arquivo CNAB</h1>
-        {% endblock %}
+  
     </div>
    
     <form action="{% url 'upload' %}" method="post" enctype="multipart/form-data">
@@ -21,5 +33,5 @@
             {{form.file}}
         <input type="submit" value="Enviar">
     </form>
-</body>{% load static %}
+</body>
 </html>
